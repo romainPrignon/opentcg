@@ -1,0 +1,37 @@
+...@./utils/style.util
+
+direction: up
+
+player1.class: player1
+player2.class: player2
+
+pod1.class: app
+pod2.class: app
+
+web1.class: web
+web2.class: web
+
+match.class: app
+match.engine.class: pkg
+
+lobby.class: app
+
+pod1.bdd.class: bdd
+pod2.bdd.class: bdd
+match.bdd.class: bdd
+lobby.bdd.class: bdd
+
+player1 -> web1: 🖍 📖
+player2 -> web2: 🖍 📖
+
+web1 -> pod1: 🖍 📖
+web2 -> pod2: 🖍 📖
+
+pod1 -> match: 🖍 📖
+pod2 -> match: 🖍 📖
+
+pod1 -> lobby: 🖍 📖
+pod2 -> lobby: 🖍 📖
+
+match -> lobby: 🖍
+lobby -> match: 🏭
